@@ -4,7 +4,7 @@ seoDescription: "End-to-End DevSecOps Kubernetes Project using Docker Kubernetes
 datePublished: Sat Dec 30 2023 08:34:54 GMT+0000 (Coordinated Universal Time)
 cuid: clqrt4jhv000a08ky2vmla21l
 slug: end-to-end-devsecops-kubernetes-project
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1703924620436/7293f29c-c958-4706-88b6-cef3cefe3915.gif
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1703928337868/ca32bcd5-668c-4964-9ddf-fa7d7f45b1b0.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1703925131504/7d1ed634-b117-4296-a466-cacb22abf823.gif
 tags: cloud, docker, aws, sonarqube, kubernetes, cloud-computing, devops, jenkins, prometheus, devsecops, grafana
 
