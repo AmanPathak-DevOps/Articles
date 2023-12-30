@@ -10,8 +10,6 @@ tags: cloud, docker, aws, sonarqube, kubernetes, cloud-computing, devops, jenkin
 
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1703923426400/f7775c5f-758b-4bcd-bfe1-76d529e16cc9.gif align="center")
-
 %[https://youtu.be/L4C2yg1j4t4] 
 
 ### Introduction:
@@ -79,7 +77,7 @@ Provide the name of your Jenkins instance, and select the Ubuntu OS 22.04 versio
 
 ![](https://lh7-us.googleusercontent.com/jJjXPwKFMPXdN16Dq1UFTfFWAHnnfq6HTnrRFHYBP722tCPeNCjohVQOA8L-k3NjTm-6sucQicvzI-aL1Ze4l_yskMN9XmCa9xhhr1Yj_ctGMpxppA__Ws4PGSmvDdS7NUm_XeM_pDLIGSdjlSaon0g align="left")
 
-We need to configure multiple things on the Jenkins instance. So, select the t2.large instance type, provide the key or you can create if you want. 
+We need to configure multiple things on the Jenkins instance. So, select the t2.large instance type, provide the key or you can create if you want.
 
 Keep the networking things as it is. But make sure to open all inbound and outbound traffic in the selected security groups.
 
@@ -95,7 +93,7 @@ Provide the name of your Monitoring Instance, and select the Ubuntu 22.04 OS.
 
 ![](https://lh7-us.googleusercontent.com/vDJVT44tnzHq9AxdARswQqJu318Q6lkyWnIsC83Hyqk3mWXo1UuQBt95bSHItSLiXMxjPCVy-7MR630waGX0BmBBau_UVW7_ZcfyHTUy8PesO8BLsEyucLZFGUOR7TltZkuzBCETIOXf6aPM8NtKDYI align="left")
 
-We need to configure the monitoring tools on this instance which needs a minimum of 4GB RAM. So, select the t2.medium instance type, provide the key or you can create if you want. 
+We need to configure the monitoring tools on this instance which needs a minimum of 4GB RAM. So, select the t2.medium instance type, provide the key or you can create if you want.
 
 Keep the networking things as it is. But make sure to open all inbound and outbound traffic in the selected security groups.
 
@@ -107,7 +105,7 @@ Increase the storage capacity for Jenkins Instance from 8GB to 15GB and click on
 
 ## **Kubernetes Master & Worker Node**
 
-We have to create two Kubernetes Nodes which need at least 2 CPUs. 
+We have to create two Kubernetes Nodes which need at least 2 CPUs.
 
 Provide the name of your Kubernetes Master Instance, and select the Ubuntu 22.04 OS.
 
@@ -115,7 +113,7 @@ In the Number of Instances, replace 1 with 2 because we need two Kubernetes Node
 
 ![](https://lh7-us.googleusercontent.com/q257bQ-xbC65fV40210XZdaA7B9RhbMRPCA3do5EI4VDHijM47ChlzPrDVDvBb1FeSzTuUdyRVMwQAaPnjf-Hgt2u05UODKgfsaz911JG2RGYVG_xhMwndf3fepfdsO0agxdrMw_wSOXnv5RUUFx74o align="left")
 
-Select the t2.medium instance type, provide the key or you can create if you want. 
+Select the t2.medium instance type, provide the key or you can create if you want.
 
 Keep the networking things as it is. But make sure to open all inbound and outbound traffic in the selected security groups then keep the rest of the things as it is and click on **Launch Instance.**
 
@@ -157,7 +155,6 @@ Copy your Jenkins Server Public IP and paste it into your favorite browser with 
 
 ![](https://lh7-us.googleusercontent.com/BDu7Rc4McJm3K6CGTqm4q-9MOfilT-PWlvZXQBifDt94rbvfD9IfvY5AM25-3Un3TEtAYLCJnK_on19T5HQlJZlDZpNdUY5T7GaXq6tyvjoLUi3D44UaubAHm2ggjVSboiSrXMggeOEtee84PWqakFY align="left")
 
-  
 Run the command on your Jenkins server
 
 ```bash
@@ -365,7 +362,7 @@ sudo useradd \
 Download the node exporter package
 
 ```bash
-wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz 
+wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 ```
 
 ![](https://lh7-us.googleusercontent.com/LojYLs07mJ4K0q8tfJlykUkW_egnn5cnbayzW_MxFbIGDz5iyFzOlxPIVhz8HTKrR-5fvyocx6UUPcsUaTNMQrSzOd1N1cfRKp_h3OO-MsA8X7QsEg4uAlIXXTcKkYoU8c3bd54PWEurJy64GlzK3BQ align="left")
@@ -513,12 +510,10 @@ Select the **Prometheus**
 
 ![](https://lh7-us.googleusercontent.com/pCscyvX01Orsp_qfCz_Jl18nX9QOsldYKJ4ZBxendgR_6FSpnDsK-ST11v6ZJHmWaewMCl6No-derm7Umex9xmO9YTt2FUGbDV-KwlnPbS_effdiBnHvH0E9EJ6km0sSHeMXawhliP3xjTsdtMtUo0Q align="left")
 
-  
 Provide the **Monitoring Server Public IP** with port 9090 to monitor the **Monitoring Server.**
 
 ![](https://lh7-us.googleusercontent.com/wadQT64ItgoHbQrlKnnnhNl_tN4yvtLjiLSHxOxd5fSzaun2vRs1ht6k5Fog0xcTqYradhQ2bIWKN5FEJW2wIwLALQNahTQNdg0yPyFw3u3br89RWGDblp4U8QkFDFOYEXNtD8YwLXZin6BvHNpKeKM align="left")
 
-  
 Click on **Save and test.**
 
 ![](https://lh7-us.googleusercontent.com/yhNClmrBKQ_bhKzpddRCPdc8MrvvoW60dMEocxkxUQuBsvHolT5f0GfCAqzrGF6GRtTdo8_8Jl5ZG0OPfdVbq2NTmugfjPrL_52Qw8rdMxOBjIrhYw2Xoryv3X2hQoJI4gALU2Gk2_EFlTsPpXK3__Y align="left")
@@ -539,7 +534,7 @@ The dashboard will look like this
 
 ![](https://lh7-us.googleusercontent.com/nK4_Y7ttJUg-KPi5GXLV_Nb0XpnRHiq_EEe9IjZXscoYTBGVxs1srgZzeoEk8h8zLYDfwNg3gNH7VybXCyt6h1acDhTxuzodekg8WqSsn_deNkoM5hhj-zJG0lslqoGe1lhyWPTM-O_7fnzcDu5u1Hc align="left")
 
-Now, we have to monitor our **Jenkins Server** as well. 
+Now, we have to monitor our **Jenkins Server** as well.
 
 For that, we need to install the Prometheus metric plugin on our Jenkins.
 
@@ -645,7 +640,7 @@ You can see we have added the credentials for the mail.
 
 Now, we have to configure our mail for the alerts.
 
-Go to Jenkins -&gt; **Manage Jenkins** \-&gt; **System** 
+Go to Jenkins -&gt; **Manage Jenkins** -&gt; **System**
 
 Search for Extend E-mail Notification.
 
@@ -681,7 +676,7 @@ NodeJS
 
 Now, configure the plugins
 
-Go to **Manage Jenkins -&gt; Tools** 
+Go to **Manage Jenkins -&gt; Tools**
 
 Click on Add JDK and provide the following things below
 
@@ -930,13 +925,13 @@ Go to **Manage Jenkins** -&gt; Tools and provide the below details.
 
 ![](https://lh7-us.googleusercontent.com/KcEEMRlaFgglmRDFqFSCY_OEefSJ-B2uJXIe_ETI_YZzOlkpJfZjzsaziihR9dCGj9S-Mh-QCSbNJo-yvUP2sytLpTedcCcZeDASqb18vA4bBZl6-zkGqbLaL6SgVywKW2Nw25uxVPIugWTuLN8MHhE align="left")
 
-Our application is Netflix Clone. So we need some movie databases on our application. 
+Our application is Netflix Clone. So we need some movie databases on our application.
 
 For that, we have one application that will provide the API. So, we can use the API to get the movies on our application.
 
 TMDB is one of them
 
-Go to this link [https://www.themoviedb.org/](https://www.themoviedb.org/) 
+Go to this link [https://www.themoviedb.org/](https://www.themoviedb.org/)
 
 Click on **Join TMDB**
 
@@ -1125,7 +1120,7 @@ Run the below command as a root user
 
 ```abap
 kubeadm join 172.31.59.154:6443 --token deq9nl.y34go2ziii0fu8c1 \
---discovery-token-ca-cert-hash sha256:e93c56bd59b175b81845a671a82ffd1839e42272d922f9c43ca8d8f6d145ce02 
+--discovery-token-ca-cert-hash sha256:e93c56bd59b175b81845a671a82ffd1839e42272d922f9c43ca8d8f6d145ce02
 ```
 
 ![](https://lh7-us.googleusercontent.com/Y_13tpS8o7SbHVJmUXELAw7RUs4St6cyXOr5UBtjnTMWB7LXSL95WtPv5of0CWXQl69Au4mJFOYMyvR8d2fGXLDSvrSBQmp8UwQCpb8z7FkBYY4gqViTMpR7oYDxrFgiJ9N0f1VMwfHOMH_C1PR1f4s align="left")
@@ -1325,9 +1320,9 @@ Also, we got the vulnerabilities for our Docker Image.
 
 Jenkins sent the console logs by email.
 
-If you want to access your Netflix **Clone** Application**.** 
+If you want to access your Netflix **Clone** Application\*\*.\*\*
 
-Copy the Public IP of Worker Node and paste it on your favorite browser with port 32000 and see the magic. 
+Copy the Public IP of Worker Node and paste it on your favorite browser with port 32000 and see the magic.
 
 ![](https://lh7-us.googleusercontent.com/dG-A7yFsZdOEH0EjDCvIxYcVzypo6bnvbOyk6xrBIQ2TgKmPEhKZBUmYYjU0_e50h_XAu4TQZFqM2aLCGtixtMCpB-dWKvjXwCPlErVteyBu5rBzjFTj-cpNxKLsq2hIA4O5Gp-XY-X7O5AiFg9JLug align="left")
 
